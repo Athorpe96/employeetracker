@@ -177,7 +177,7 @@ function updateEntry() {
 //Asks user to add employee
 function addEmployee() {
     readRoles().then(roles => {
-        const userRoleChoice = roles.map(({ title: name, id: value }) => ({ name, value }));
+        const userRole = roles.map(({ title: name, id: value }) => ({ name, value }));
         inquirer
             .prompt([
                 {
@@ -194,7 +194,7 @@ function addEmployee() {
                     name: "employeeRole",
                     type: "list",
                     message: "Please select the employee's job role:",
-                    choices: userRoleChoice
+                    choices: userRole
                 },
                 {
                     name: "employeesManager",
@@ -295,7 +295,7 @@ function deleteDepartment() {
 //Asks user to add a role
 function addRole() {
     readDept().then(department => {
-        const getDeptChoice = department.map(({ name: name, id: value }) => ({ name, value }));
+        const DeptChoice = department.map(({ name: name, id: value }) => ({ name, value }));
         inquirer
             .prompt([
                 {
@@ -312,7 +312,7 @@ function addRole() {
                     name: "userRoleDeptAdd",
                     type: "list",
                     message: "What department will this role be for?:",
-                    choices: getDeptChoice
+                    choices: DeptChoice
                 }
             ])
             .then(answer => {

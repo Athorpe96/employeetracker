@@ -62,19 +62,19 @@ VALUES ("Office Manager", 32000, 7);
 
 -- Employees
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
-VALUES ("Henry", "Ford", 1, "Bobby Flay");
+VALUES ("Henry", "Ford", 1, "Henry Ford");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
 VALUES ("Silly", "Sally", 3, "N/A");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
 VALUES ("Sesame", "Chicken", 5, "N/A");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
-VALUES ("Donald", "Trump", 6, "Guy Fieri");
+VALUES ("Donald", "Trump", 6, "Donald Trump");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
 VALUES ("Harry", "Potter", 7, "N/A");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
 VALUES ("Johny", "Cash", 9, "N/A");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
-VALUES ("Waka", "Flaka", 10, "Rachel Ray");
+VALUES ("Waka", "Flaka", 10, "Waka Flaka");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
 VALUES ("Willy", "Nelsom", 11, "N/A");
 INSERT INTO employee (first_name, last_name, role_id, manager_name)
